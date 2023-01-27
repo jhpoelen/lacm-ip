@@ -3,12 +3,12 @@
 # a url without scheme like https:// (e.g., ```url: foodorganisms.txt```) 
 # is assumed to be a local file in working directory
 datasets:
-    - url: names.csv
-      type: text/csv
+#    - url: names.csv
+#      type: text/csv
 #   - url: https://example.org/data.tsv
 #     type: text/tab-separated-values
-#    - url: https://serv.biokic.asu.edu/ecdysis/content/dwca/UCSB-IZC_DwC-A.zip
-#      type: application/dwca
+    - url: http://ipt.idigbio.org/archive.do?r=lacm-ip
+      type: application/dwca
 #    - url: https://example.org/rss.xml
 #      type: application/rss2+xml
 # 
@@ -26,19 +26,19 @@ taxonomies:
       enabled: true
       name: Integrated Taxonomic Information System
     - id: ncbi
-      enabled: true
+      enabled: false
       name: NCBI Taxonomy
     - id: discoverlife
-      enabled: true
+      enabled: false
       name: Discover Life Taxonomy
     - id: batnames
       enabled: false
       name: Bat Names 
     - id: col
-      enabled: false
+      enabled: true
       name: Catalogue of Life
     - id: gbif
-      enabled: false
+      enabled: true
       name: GBIF Backbone Taxonomy
     - id: globi
       enabled: false
@@ -56,7 +56,7 @@ taxonomies:
       enabled: false
       name: Paleobiology Database
     - id: plazi
-      enabled: false
+      enabled: true
       name: Plazi Treatments
     - id: tpt
       enabled: false
